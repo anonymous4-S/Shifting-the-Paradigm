@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: pytorch-complex
+Version: 0.1.2
+Summary: Complex Modules for PyTorch
+Home-page: https://github.com/soumickmj/pytorch-complex
+Author: Soumick Chatterjee
+Author-email: soumick.chatterjee@ovgu.de
+License: MIT license
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pytorch-complex
+
+Install it using pip: 
+
+pip install pytorch-complex
+
+Usage:
+Similar to PyTorch.
+For using the Complex features of this library, just change the regular torch imports with torchcomplex imports.
+For example:
+import torchcomplex.nn as nn  instead of import torch.nn as nn
+Then, simply nn.Conv2d for both torch and torchcomplex, for 2D Convolution
+
+## Credits
+
+If you like this repository, please click on Star!
+
+If you use this package or benift from the codes of this repo, please cite the following in your publications:
+
+> [Soumick Chatterjee, Pavan Tummala, Oliver Speck, Andreas Nürnberger: Complex Network for Complex Problems: A comparative study of CNN and Complex-valued CNN (IEEE IPAS, Dec 2023)](https://arxiv.org/abs/2302.04584)
+
+BibTeX entry:
+
+```bibtex
+@inproceedings{chatterjee2022complex,
+  title={Complex Network for Complex Problems: A comparative study of CNN and Complex-valued CNN},
+  author={Chatterjee, Soumick and Tummala, Pavan and Speck, Oliver and N{\"u}rnberger, Andreas},
+  booktitle={2022 IEEE 5th International Conference on Image Processing Applications and Systems (IPAS)},
+  pages={1--5},
+  year={2022},
+  organization={IEEE}
+}
+```
+Thank you so much for your support.
+
+
+History
+=======
+
+0.1.2 (2023-06-19)
+------------------
+
+* Support Function "clamp" added
+
+0.1.1 (2023-06-16)
+------------------
+
+* modReLU implementation changed
+* New activation functions added: Hirose and modSigmoid
+
+0.1.0 (2022-11-06)
+------------------
+
+* Default behaviour of complex_weights has been changed to True
+* Basic max and avg functional callers added
+* Bug fix with the new pooling functionals
+
+0.0.8 (2020-12-08)
+------------------
+
+* Complex Weight Initializations added (Few basics and trabelsi_standard, trabelsi_independent) 
+
+0.0.1 (2020-11-06)
+------------------
+
+* First release (of the package) on PyPI. 
+* torchcomplex.nn -> Convolutions, Linears, Dropout, Pooling, BatchNorm, Few Actications
+* Untested first version, could be buggy
+
+0.0.0 (2020-11-06)
+------------------
+
+* First release (basic structure, not the actual package code) on PyPI.
